@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sistema de Tiquetes para Estudiantes</title>
+    <link rel="stylesheet" href="administ.css">
+</head>
+
+<body>
+    <h1>Sistema de Tickets para Estudiantes</h1>
+    <p>Administrador:</p>
+
+    <div id="ticket-form">
+        <div id="cola">
+            <ul id="lista-cola"></ul>
+          </div>
+        <h2>Solicitud de Asistencia</h2>
+        <h4>Cola de Tickets</h4>
+        <label for="estudiante">Nombre del Estudiante:</label><br><br>
+
+        <label for="consulta">Consulta:</label><br><br>
+
+        <label for="urgencia">Tipo de Urgencia:</label><br><br>
+        <label for="respuesta">Respuesta:</label>
+        <textarea id="consulta" required></textarea><br><br>
+
+        <button id="asistencia">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

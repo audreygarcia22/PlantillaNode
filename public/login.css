@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-color:#96dbe0; 
+}
+
+#tabla {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(104, 124, 14, 0.1);
+    width: 300px; 
+    text-align: center; 
+}
+
+#tabla img  {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+ h1 {
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+label {
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #020202;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+label img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    outline: none;
+    flex-grow: 1; 
+    padding: 0;
+    font-size: 1rem;
+    
+}
+
+button {
+    background-color: #40E0D0; 
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #42c8d1; 
+}

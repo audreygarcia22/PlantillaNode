@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    background-image: url(imagen/descargafwd.png);
+    
+  }
+  #ticket-form, #panel-profesor, #lista-estudiantes {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #96dbe0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #40E0D0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #42c8d1; 
+  }
+  
+  
+  
