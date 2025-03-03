@@ -1,5 +1,30 @@
 {
-    "users":[],
-    "formulario":[]
-
+  "users": [
+    {
+      "id": "42be",
+      "tipo": "Administrador",
+      "name": "Audrey María",
+      "apellido": "García",
+      "cedula": "23444",
+      "email": "agarcia@fwdcostarica.com",
+      "password": "22333"
+    },
+    {
+      "id": "ca8a",
+      "tipo": "Estudiante",
+      "name": "Andy",
+      "apellido": "Mora",
+      "cedula": "234556",
+      "email": "amora@fwdcostarica.com",
+      "password": "122333"
+    }
+  ],
+  "formulario": [
+    {
+      "id": "4ed0",
+      "name": "\"Andy\"",
+      "date": "03/03/2025, 13:52",
+      "consulta": "hola profe"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htbuttonml>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,22 +9,25 @@
 <body>
     <div id="tabla">
         <img src="imagen/pixelcut-export.png" alt="">
-        <h1>Inicio de Sesión</h1>
+        <h1>Sistema de Tickets para Uso de Equipo</h1>
+        <h3>Inicio de Sesión</h3>
         <label>
             <img src="imagen/icon.png" alt="">
-            <input type="text" id="Username" placeholder="Usuario">
+            <input type="text" id="UserName" placeholder="Usuario" required>
         </label>
         <label>
             <img src="imagen/passw.png" alt="">
-            <input type="password" id="password" placeholder="Contraseña">
+            <input type="password" id="password" placeholder="Contraseña" required>
         </label>
         <p>Olvide mi contraseña</p>
-        <button id="button">Entrar</button>
+        <button id="btnEntrar">Entrar</button>
         <p>¿No tienes una cuenta?</p>
-        <a href="registro">Registrate</a>
+        <a href="registro.html">Registrate</a>
         
 
     </div>
+    <script type="module" src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </body>
 </html>

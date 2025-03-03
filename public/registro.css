@@ -13,7 +13,7 @@ body {
     
   }
   
-  form {
+  #tabla {
     background-color: #96dbe0;
     padding: 20px;
     border-radius: 8px;
@@ -36,10 +36,10 @@ body {
 
   }
   
-  input[type="submit"] {
+  button {
     background-color: #40E0D0; 
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
   }
   

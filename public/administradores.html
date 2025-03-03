@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Sistema de Tiquetes para Estudiantes</title>
+    <title>Administrador - Sistema de Tickets</title>
     <link rel="stylesheet" href="administ.css">
 </head>
-
 <body>
     <h1>Sistema de Tickets para Estudiantes</h1>
-    <p>Administrador:</p>
+    <p id="nombreAdministrador">Administrador:</p>
 
-    <div id="ticket-form">
+    <div id="ticket">
         <div id="cola">
-            <ul id="lista-cola"></ul>
-          </div>
+            <h4>Cola de Tickets</h4>
+            <ul id="listaCola"></ul>
+        </div>
+
         <h2>Solicitud de Asistencia</h2>
-        <h4>Cola de Tickets</h4>
-        <label for="estudiante">Nombre del Estudiante:</label><br><br>
+        
+        <label>Nombre del Estudiante:</label><br>
+        <span id="estudiante"></span><br><br>
 
-        <label for="consulta">Consulta:</label><br><br>
+        <label>Consulta:</label><br>
+        <span id="consulta"></span><br><br>
 
-        <label for="urgencia">Tipo de Urgencia:</label><br><br>
-        <label for="respuesta">Respuesta:</label>
-        <textarea id="consulta" required></textarea><br><br>
+        <label>Tipo de Urgencia:</label><br>
+        <span id="urgencia"></span><br><br>
+        
+        <label>Fecha y Hora de Solicitud:</label><br>
+        <span id="fechaSolicitud"></span><br><br>
+
+        <label>Respuesta:</label><br>
+        <textarea id="respuesta" required></textarea><br><br>
 
         <button id="asistencia">Enviar</button>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="administrator.js"></script>
 </body>
-
 </html>

@@ -7,35 +7,36 @@
 </head>
 
 <body>
-  <h1>Formulario de Registro</h1>
+  <h1>Sistema de Tickets para Uso de Equipo</h1>
+  <h3>Formulario de Registro</h3>
 
-  <form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+  <div id="tabla">
+    <p>Tipo</p>
+    <select name="" id="tipo">
+      <option value="Administrador">Administrador</option>
+      <option value="Estudiante">Estudiante</option>
+    </select>
 
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" required><br><br>
+    <label id="nombre">Nombre:</label>
+    <input type="text" id="name" name="nombre" required><br><br>
 
-    <label for="ident">Número de identificación:</label>
+    <label id="apellido">Apellido:</label>
+    <input type="text" id="lastName" name="apellido" required><br><br>
+
+    <label id="ident">Número de identificación:</label>
     <input type="number" id="cedula" name="cedula" required><br><br>
 
-    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+    <label id="emai">Correo Electrónico:</label>
+    <input type="em" id="email" name="email" required><br><br>
 
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <label id="contrasena">Contraseña:</label>
+    <input type="pass" id="password" name="contrasena" required><br><br>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="number" id="telefono" name="telefono" required><br><br>
-
-    <label for="direccion">Dirección:</label>
-    <textarea id="direccion" name="direccion" required></textarea><br><br>
-
-    <label for="contrasena">Contraseña:</label>
-    <input type="password" id="contrasena" name="contrasena" required><br><br>
-
-    <input type="submit" value="Registrar">
-  </form>
+    <button id="sumit"><a href="login.html">Regístrate</a></button>
+  </div>
 </body>
+<script type="module" src="record.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </html>

@@ -10,7 +10,7 @@ body {
     background-image: url(imagen/descargafwd.png);
     
   }
-  #ticket-form, #panel-profesor, #lista-estudiantes {
+  #ticket, #panel-profesor, #lista-estudiantes {
     margin-bottom: 20px;
     padding: 15px;
     border: 2px solid white;

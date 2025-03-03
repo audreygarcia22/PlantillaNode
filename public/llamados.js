@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('https://api.hacienda.go.cr/fe/ae?identificacion=207360415', {
+        const response = await fetch("http://localhost:3003/users", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,19 +23,22 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,apellido,edad) {
+async function postUsers(tipo,name,apellido,cedula,email,password) {
     try {
      
         const userData = { 
-            nombre,
+            tipo,
+            name,
             apellido,
-            edad
+            cedula,
+            email,
+            password
         
         };
 
 
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3003/users", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -58,14 +61,17 @@ export{postUsers}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nombre,apellido,edad,id) 
+async function updateUsers(tipo,name,apellido,cedula,email,password,id) 
 {
     try {
      
         const userData = { 
-            nombre, 
+            tipo,
+            name, 
             apellido,
-            edad
+            cedula,
+            email,
+            password
         
         };
 
@@ -73,7 +79,7 @@ async function updateUsers(nombre,apellido,edad,id)
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3003/users/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -98,7 +104,7 @@ export{updateUsers}
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3003/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
